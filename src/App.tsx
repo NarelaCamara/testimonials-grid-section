@@ -55,7 +55,7 @@ function App() {
   ]);
 
   return (
-    <div className="grid md:grid-cols-2 md:grid-rows-4  lg:grid-cols-4 lg:grid-rows-2 gap-0 m-4">
+    <div className="grid md:grid-cols-2 md:grid-rows-4  lg:grid-cols-4 lg:grid-rows-2 gap-0 mx-auto max-w-[1200px] my-[2.5%]">
       <div className="m-4 md:col-span-2 lg:col-span-2">
         <Card person={cards[0]} color={colors[0]} />
       </div>
