@@ -10,7 +10,7 @@ export const colors = [
   "bg-[#733FC8]",
   "bg-[#48556A]",
   "bg-[#FFFFFF]",
-  "bg-[#19202D]",
   "bg-[#FFFFFF]",
+  "bg-[#19202D]",
 ] as const;
 export type Color = (typeof colors)[number];
