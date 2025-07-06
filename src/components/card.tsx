@@ -1,8 +1,27 @@
 import { colors, type Color, type IPerson } from "../interfaces";
+import quotation from "../assets/bg-pattern-quotation.svg";
 
-export const Card = ({ person, color }: { person: IPerson; color: Color }) => {
+export const Card = ({
+  person,
+  color,
+  icon,
+}: {
+  person: IPerson;
+  color: Color;
+  icon: boolean;
+}) => {
   return (
-    <div className={`p-8 border-0 rounded-lg min-w-full ${color} min-h-full`}>
+    <div
+      className={`p-8 border-0 rounded-lg min-w-full ${color} min-h-full z-20`}
+    >
+      {icon && (
+        <img
+          src={quotation}
+          alt="avatar"
+          className={`w-[104px] z-10 absolute`}
+        />
+      )}
+
       <div className="flex flex-row items-center">
         <div
           className={`mr-4 rounded-full ${
