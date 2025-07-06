@@ -4,11 +4,17 @@ export const Card = ({ person, color }: { person: IPerson; color: Color }) => {
   return (
     <div className={`p-8 border-0 rounded-lg min-w-full ${color} min-h-full`}>
       <div className="flex flex-row items-center">
-        <div className="pr-4">
+        <div
+          className={`mr-4 rounded-full ${
+            color === colors[0] || color === colors[4]
+              ? "border-[#A775F1] border-2 "
+              : " "
+          }`}
+        >
           <img
             src={person.avatar}
             alt="avatar"
-            className="max-w-8 rounded-full border-2 border-[#A775F1]"
+            className={`max-w-8  rounded-full `}
           />
         </div>
         <div className="">
