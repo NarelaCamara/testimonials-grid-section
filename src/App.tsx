@@ -6,7 +6,7 @@ import kira from "./assets/image-kira.jpg";
 import patrick from "./assets/image-patrick.jpg";
 import "./App.css";
 import { Card } from "./components/card";
-import type { IPerson } from "./interfaces";
+import { colors, type IPerson } from "./interfaces";
 
 function App() {
   const [cards] = useState<Array<IPerson>>([
@@ -27,7 +27,6 @@ function App() {
       name: "Jonathan Walters",
       verified: true,
     },
-
     {
       title: "Such a life-changing experience. Highly recommended!",
       description:
@@ -56,21 +55,21 @@ function App() {
   ]);
 
   return (
-    <div className="p-4">
+    <div className="">
       <div>
-        <Card person={cards[0]} color={"bg-733FC8"} />
+        <Card person={cards[0]} color={colors[0]} />
       </div>
       <div>
-        <Card person={cards[1]} color={"bg-733FC8"} />
+        <Card person={cards[1]} color={colors[1]} />
       </div>
       <div>
-        <Card person={cards[2]} color={"bg-733FC8"} />
+        <Card person={cards[2]} color={colors[2]} />
       </div>
       <div>
-        <Card person={cards[3]} color={"bg-733FC8"} />
+        <Card person={cards[3]} color={colors[3]} />
       </div>
       <div>
-        <Card person={cards[4]} color={"bg-733FC8"} />
+        <Card person={cards[4]} color={colors[4]} />
       </div>
     </div>
   );
