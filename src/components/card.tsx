@@ -2,7 +2,9 @@ import { colors, type Color, type IPerson } from "../interfaces";
 
 export const Card = ({ person, color }: { person: IPerson; color: Color }) => {
   return (
-    <div className={`m-8 p-8 border-0 rounded-lg min-w-[350px] ${color}`}>
+    <div
+      className={`p-8 border-0 rounded-lg min-w-[21.875rem] ${color} min-h-full`}
+    >
       <div className="grid grid-cols-4 grid-rows-1 gap-4">
         <div className="col-span-1">
           <img

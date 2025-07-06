@@ -55,20 +55,20 @@ function App() {
   ]);
 
   return (
-    <div className="">
-      <div>
+    <div className="grid md:grid-cols-2 md:grid-rows-4 md:gap-0 m-4">
+      <div className="m-4 md:col-span-2">
         <Card person={cards[0]} color={colors[0]} />
       </div>
-      <div>
+      <div className="m-4 md:row-start-2">
         <Card person={cards[1]} color={colors[1]} />
       </div>
-      <div>
+      <div className="m-4 md:col-span-2 md:col-start-1 md:row-start-4">
         <Card person={cards[2]} color={colors[2]} />
       </div>
-      <div>
+      <div className="m-4 md:col-start-2 md:row-start-2">
         <Card person={cards[3]} color={colors[3]} />
       </div>
-      <div>
+      <div className="m-4 md:col-span-2 md:col-start-1 md:row-start-3">
         <Card person={cards[4]} color={colors[4]} />
       </div>
     </div>
