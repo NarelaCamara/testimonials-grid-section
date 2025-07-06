@@ -13,7 +13,7 @@ export const Card = ({ person, color }: { person: IPerson; color: Color }) => {
         </div>
         <div className="">
           <h2
-            className={`font-[Barlow Condensed] text-[1.25rem] font-semibold ${
+            className={`font-[Barlow Condensed] text-[0.8125rem]  ${
               color === colors[2] ? "font-[#676D7E]" : "text-white "
             }`}
           >
@@ -21,7 +21,7 @@ export const Card = ({ person, color }: { person: IPerson; color: Color }) => {
           </h2>
           {person.verified && (
             <p
-              className={`font-[Barlow Condensed] text-[0.8125rem] ${
+              className={`font-[Barlow Condensed] text-[0.6875rem] ${
                 color === colors[2] ? "font-[#676D7E]" : "text-white "
               }`}
             >
@@ -34,7 +34,7 @@ export const Card = ({ person, color }: { person: IPerson; color: Color }) => {
       <div className="grid grid-cols-2 grid-rows-1 gap-1">
         <div className="col-span-2">
           <p
-            className={`font-[Barlow Condensed] text-[1.25rem] py-4 ${
+            className={`font-[Barlow Condensed] font-semibold text-[1.25rem] py-4 ${
               color === colors[2] ? "font-[#48556A]" : "text-white "
             }`}
           >
