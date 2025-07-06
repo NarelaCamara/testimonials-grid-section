@@ -3,15 +3,15 @@ import { colors, type Color, type IPerson } from "../interfaces";
 export const Card = ({ person, color }: { person: IPerson; color: Color }) => {
   return (
     <div className={`p-8 border-0 rounded-lg min-w-full ${color} min-h-full`}>
-      <div className="grid grid-cols-4 grid-rows-1 gap-4">
-        <div className="col-span-1">
+      <div className="flex flex-row items-center">
+        <div className="pr-4">
           <img
             src={person.avatar}
             alt="avatar"
-            className="min-w-16 rounded-full"
+            className="max-w-8 rounded-full border-2 border-[#A775F1]"
           />
         </div>
-        <div className="col-span-3">
+        <div className="">
           <h2
             className={`font-[Barlow Condensed] text-[1.25rem] font-semibold ${
               color === colors[2] ? "font-[#676D7E]" : "text-white "
